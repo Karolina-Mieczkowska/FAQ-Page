@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+footer,
+header {
+    background: lightblue;
+}
+
+.accordion-item {
+    margin-bottom: .5em;
+}
+
+/* Buttons styles start */
+.accordion-button {
+    display: inline-block;
+    border: none;
+    width: 100%;
+    padding: 0 1.5em;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: left;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background: #0053ba;
+}
+
+.accordion-button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.accordion-button:active {
+    transform: scale(0.99);
+}
+/* Button styles end */
+
+.button-item-1 {
+    padding: .7em 0;
+}
+
+.arrow-down {
+    color: pink;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.accordion-body {
+    padding: 1em 1.5em;
+    display: none;
+}
+
+.accordion-body-active {
+    display: block;
+}
+
