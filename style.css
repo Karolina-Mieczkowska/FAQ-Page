@@ -59,12 +59,16 @@ header {
     font-size: 36px;
 }
 
+.arrow-up {
+    transform: rotate(180deg);
+}
+
 .accordion-body {
     padding: 1em 1.5em;
     display: none;
 }
 
-.accordion-body-active {
+.accordion-body-active .accordion-body {
     display: block;
 }
 
