@@ -5,49 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Accordion</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        ...
+        <section class="header-description">
+            <div class="header-picture-circle">
+                ...
+            </div>
+            <div class="faq-title">FAQ</div>
+            <div class="header-description-text">
+                <h1>Frequently asked questions about the meaning of life</h1>
+            </div>
+        </section>
     </header>
     <main>
-        <section class="accordion-item">
-            <button class="accordion-button">
-                <div class="button-item-1">
-                    Accordion Item #1
-                </div>
-                <div class="button-item-2">
-                    <span class="material-icons arrow-down">&#xe5cf;</span>
-                </div>
-            </button>
-            <div class="accordion-body">Lorem </div>
-        </section>
-
-        <section class="accordion-item">
-            <button class="accordion-button">
-                <div class="button-item-1">
-                    Accordion Item #2
-                </div>
-                <div class="button-item-2">
-                    <span class="material-icons arrow-down">&#xe5cf;</span>
-                </div>
-            </button>
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        </section>
-
-        <section class="accordion-item">
-            <button class="accordion-button">
-                <div class="button-item-1">
-                    Accordion Item #3
-                </div>
-                <div class="button-item-2">
-                    <span class="material-icons arrow-down">&#xe5cf;</span>
-                </div>
-            </button>
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo dolores molestias, qui at est tempore dolore amet laudantium ipsam reiciendis accusamus officiis delectus veritatis nulla libero magnam explicabo optio.</div>
-        </section>
+        <div class="accordion-wrapper">
+            <section class="accordion-item">
+                <button class="accordion-button">
+                    <div class="button-item-1">
+                        Accordion Item #1
+                    </div>
+                    <div class="button-item-2">
+                        <span class="material-icons arrow-down">&#xe5cf;</span>
+                    </div>
+                </button>
+                <div class="accordion-body">Lorem </div>
+            </section>
+    
+            <section class="accordion-item">
+                <button class="accordion-button">
+                    <div class="button-item-1">
+                        Accordion Item #2
+                    </div>
+                    <div class="button-item-2">
+                        <span class="material-icons arrow-down">&#xe5cf;</span>
+                    </div>
+                </button>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </section>
+    
+            <section class="accordion-item">
+                <button class="accordion-button">
+                    <div class="button-item-1">
+                        Accordion Item #3
+                    </div>
+                    <div class="button-item-2">
+                        <span class="material-icons arrow-down">&#xe5cf;</span>
+                    </div>
+                </button>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo dolores molestias, qui at est tempore dolore amet laudantium ipsam reiciendis accusamus officiis delectus veritatis nulla libero magnam explicabo optio.</div>
+            </section>
+        </div>
+        
         
     </main>
     <script src="index.js" type="text/javascript"></script>

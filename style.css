@@ -1,10 +1,62 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer,
 header {
     background: lightblue;
+}
+
+header {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.header-description,
+.header-picture-circle {
+    /* border: 3px solid black; */
+}
+
+.header-description {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #fff;
+}
+
+.header-picture-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+    background: #ccc;
+    /* background-image: url(plane.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-title {
+    font-size: 2.5em;
+    position: relative;
+    top: -10px;
+}
+
+.header-description-text h1 {
+    margin: 0;
+    padding-bottom: 1em;
+    font-weight: 400;
+}
+
+.accordion-wrapper {
+    
 }
 
 .accordion-item {
@@ -21,7 +73,7 @@ header {
     text-decoration: none;
     background: #0069ed;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
@@ -32,21 +84,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
 }
 
 .accordion-button:hover,
 .accordion-button:focus {
     background: #0053ba;
-}
-
-.accordion-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
-
-.accordion-button:active {
-    transform: scale(0.99);
 }
 
 .button-item-1 {
