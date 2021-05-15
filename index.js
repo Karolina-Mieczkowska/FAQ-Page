@@ -5,6 +5,8 @@ const arrowItems = document.querySelectorAll('.arrow-down');
 
 accordionItems.forEach(function(ind) {
     ind.firstElementChild.nextElementSibling.style.transform = 'translateY(-100%)';
+    ind.firstElementChild.style.position = 'absolute';
+    ind.firstElementChild.style.top = '0';
 })
 
 // buttonItems (na jutro)
@@ -19,6 +21,7 @@ accordionItems.forEach(function(ind, key) {
     // accordionItems[key].classList.toggle('accordion-body-active');
     accordionItems[key].firstElementChild.nextElementSibling.style.transform = 'translateY(0)';
     accordionItems[key].firstElementChild.nextElementSibling.style.opacity = '1';
+    ind.firstElementChild.style.top = '30px';
     })
 }) 
 
