@@ -79,7 +79,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .button-item-1 {
@@ -141,19 +141,82 @@ footer a {
 
 @media only screen and (min-width: 576px) {
 
-    .accordion-button:hover {
-        background: #D8E3E7;
-        color: #132C33;
+    .header-picture-circle {
+        width: 300px;
+        height: 300px;
+    }
+    .accordion-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-description-text {
+        padding: 0 7em;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
-    
+    header {
+        background: #D8E3E7;
+        margin-bottom: 3.5em;
+    }
+    .header-description {
+        display: flex;
+        background: transparent;
+    }
+    .picture-desktop-container,
+    .header-description-text {
+        text-align: left;
+    }
+    .picture-desktop-container {
+        flex-basis: 60%;
+    }
+    .header-picture-circle {
+        width: 400px;
+        height: 400px; 
+    }
+    .header-description-text {
+        padding-top: 4.5em;
+        flex-basis: 40%;
+    }
+    .faq-title {
+        font-size: 3.5em;
+        font-weight: 500;
+        margin-bottom: .3em;
+        background: #FFF177;
+        margin-left: -100%;
+        padding-left: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .faq-yellow {
+        padding-right: 1em;
+    }
+    .faq-transparent {
+        flex-basis: 80%;
+        background: #D8E3E7;
+    }
+    .header-description-text h1 {
+        padding-right: 0;
+        font-size: 2em;
+    }
+    .accordion-button:hover {
+        background: #D8E3E7;
+        color: #132C33;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     
-    
+    .picture-desktop-container,
+    .header-description-text {
+        flex-basis: 50%;
+        text-align: left;
+    }
+    .header-description-text h1 {
+        padding-right: 40%;
+    }
 
 }
