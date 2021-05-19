@@ -13,11 +13,6 @@ header {
     padding-top: 35px;
 }
 
-.header-description,
-.header-picture-circle {
-    /* border: 3px solid black; */
-}
-
 .header-description {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -50,14 +45,6 @@ header {
     font-weight: 400;
 }
 
-.accordion-wrapper {
-    
-}
-
-.accordion-item {
-    margin-bottom: .5em;
-}
-
 /* Buttons styles start */
 .accordion-button {
     display: inline-block;
@@ -88,7 +75,13 @@ header {
 
 /* Button styles end */
 
-.arrow-down {
+/* Accordion */
+
+.accordion-item {
+    margin-bottom: .5em;
+}
+
+.arrow {
     color: #D8E3E7;
     cursor: pointer;
     font-size: 36px;
@@ -96,32 +89,45 @@ header {
 
 .accordion-body {
     padding: 1em 1.5em;
-    opacity: 0;
-    transform: translateY(-100%);
-    height: 0;
-    position: relative;
-    z-index: -1;
-    transition: all 0.5s ease;
 }
 
-/* toggle class */
+/* Accorddion end */
 
-.accordion-body-active .accordion-button {
-    position: relative;
+/* Accordion Animation */
+
+.accordion-button.open {
     background: #D8E3E7;
     color: #132C33;
 }
 
-.arrow-up {
+.accordion-button.open>.arrow {
+    color: #132C33;
+}
+
+.accordion-collapse {
+    transition: height 500ms ease;
+}
+
+.accordion-collapse.collapse {
+    display: none;
+}
+
+.accordion-collapse.open {
+    display: block;
+}
+
+.accordion-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 500ms ease;
+}
+
+.arrow.arrow-up {
     transform: rotate(180deg);
     color: #132C33;
 }
 
-.accordion-body-active .accordion-body {
-    transform: translateY(0);
-    opacity: 1;
-    height: auto;
-}
+/* Accordion Animation end */
 
 footer {
     background: #132C33;
@@ -216,7 +222,7 @@ footer a {
         text-align: left;
     }
     .header-description-text h1 {
-        padding-right: 40%;
+        padding-right: 30%;
     }
 
 }
