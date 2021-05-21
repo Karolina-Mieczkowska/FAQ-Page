@@ -1,20 +1,16 @@
 const accordionButton = document.querySelectorAll('.accordion-button');
 const accordionSection = document.querySelectorAll('.accordion-item');
 
-// accordionSection.forEach((item) => {
-//     item.addEventListener('mouseover', (event) => {
-//         item.firstElementChild.lastElementChild.firstElementChild.style.color = '#132C33';
-//     })
-//     item.addEventListener('mouseout', (event) => {
-//         item.firstElementChild.lastElementChild.firstElementChild.style.color = '#D8E3E7';
-//     })
-// })
-
-// Dodaj if do mouseover!
-
 accordionSection.forEach((item) => {
     item.addEventListener('mouseover', (event) => {
-        console.log(item.firstElementChild);
+        if (!item.firstElementChild.classList.contains('open')) {
+            item.firstElementChild.lastElementChild.firstElementChild.style.color = '#132C33';
+        } 
+    })
+    item.addEventListener('mouseout', (event) => {
+        if (!item.firstElementChild.classList.contains('open')) {
+            item.firstElementChild.lastElementChild.firstElementChild.style.color = '#D8E3E7';
+        } 
     })
 })
 

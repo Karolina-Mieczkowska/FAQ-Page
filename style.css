@@ -23,7 +23,7 @@ header {
     border-radius: 50%;
     width: 100px;
     height: 100px; 
-    background-image: url(question.png);
+    background-image: url(img/question.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -136,11 +136,45 @@ footer {
     text-align: center;
     font-size: 10px;
     padding: 1em 0;
+    line-height: 1.5;
+}
+
+/* footer h2 {
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 1em 0;
+} */
+
+footer hr {
+    overflow: visible; 
+    padding: 0;
+    border: none;
+    border-top: solid 1px #D8E3E7;
+    color: #D8E3E7;
+    text-align: center;
+    line-height: 1;
+}
+
+footer hr::after {
+    content: "FAQ";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #132C33;
+}
+
+footer p {
+    margin-top: 0;
 }
 
 footer a {
     color: #FFF177;
     text-decoration: none;
+    padding: 1rem 0;
 }
 
 /* Desktop version */
@@ -208,9 +242,34 @@ footer a {
         padding-right: 0;
         font-size: 2em;
     }
+    .accordion-button {
+        font-size: 1.3rem;
+    }
     .accordion-button:hover {
         background: #D8E3E7;
         color: #132C33;
+    }
+    .arrow {
+        font-size: 48px;
+    }
+    .accordion-body {
+        font-size: 1.2rem;
+    }
+    footer {
+        text-align: left;
+        padding: 1rem 3rem;
+    }
+    footer hr {
+        overflow: visible; 
+        padding: 0;
+        border: none;
+        border-top: solid 1px #D8E3E7;
+        color: #D8E3E7;
+        text-align: left;
+    }
+    footer hr::after {
+        padding-right: 0.25em;
+        padding-left: 0;
     }
 }
 
@@ -223,6 +282,9 @@ footer a {
     }
     .header-description-text h1 {
         padding-right: 30%;
+    }
+    .accordion-wrapper {
+        width: 70%;
     }
 
 }
