@@ -177,6 +177,12 @@ footer a {
     padding: 1rem 0;
 }
 
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: .5em 0 1.5em 0;
+}
+
 /* Desktop version */
 
 @media only screen and (min-width: 576px) {
@@ -199,7 +205,6 @@ footer a {
 @media only screen and (min-width: 768px) {
     header {
         background: #D8E3E7;
-        margin-bottom: 3.5em;
     }
     .header-description {
         display: flex;
@@ -241,6 +246,9 @@ footer a {
     .header-description-text h1 {
         padding-right: 0;
         font-size: 2em;
+    }
+    .accordion-wrapper {
+        margin: 3.5em auto;
     }
     .accordion-button {
         font-size: 1.3rem;
