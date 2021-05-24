@@ -72,12 +72,17 @@ header {
     padding: .7em 0;
 }
 
+.accordion-button:hover {
+    background: #D8E3E7;
+    color: #132C33;
+}
+
 /* Button styles end */
 
 /* Accordion */
 
 .accordion-item {
-    margin-bottom: .5em;
+    margin-bottom: .1em;
 }
 
 .arrow {
@@ -246,12 +251,11 @@ footer img {
     .accordion-wrapper {
         margin: 3.5em auto;
     }
+    .accordion-item {
+        margin-bottom: .5em;
+    }
     .accordion-button {
         font-size: 1.5rem;
-    }
-    .accordion-button:hover {
-        background: #D8E3E7;
-        color: #132C33;
     }
     .arrow {
         font-size: 48px;
