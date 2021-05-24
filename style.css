@@ -45,6 +45,10 @@ header {
     font-weight: 400;
 }
 
+.accordion-wrapper {
+    margin-top: 1.3em;
+}
+
 /* Buttons styles start */
 .accordion-button {
     display: inline-block;
@@ -194,8 +198,10 @@ footer img {
     }
     .accordion-wrapper {
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 1.5em auto;
+    }
+    .accordion-item {
+        margin-bottom: .2em;
     }
     .header-description-text {
         padding: 0 7em;
